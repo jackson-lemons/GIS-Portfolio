@@ -45,3 +45,33 @@ The LS factor represents the effect of **slope length and slope steepness on ero
 
 The LS raster was calculated using Raster Calculator:
 
+((Power((Float("FlowAcc_Clip") * 3.125) / 72.60 , 0.4)) *
+(Power(Sin(Float("Slope_dem_fi1") * 0.01745329252) / 0.0896 , 1.3)))
+
+
+Where:
+- **FlowAcc_Clip** = flow accumulation raster  
+- **3.125** = DEM cell size (ft)  
+- **Slope_dem_fi1** = slope raster derived from the DEM  
+
+This equation calculates the terrain contribution to erosion potential. :contentReference[oaicite:7]{index=7}
+
+---
+
+## LS Value Correction
+
+Very large LS values can occur along stream channels where flow accumulation is high.  
+To avoid unrealistic erosion estimates, LS values were capped at **100**. :contentReference[oaicite:8]{index=8}
+
+---
+
+## Outputs
+This workflow produces:
+
+- Flow direction raster
+- Flow accumulation raster
+- Watershed delineation raster
+- LS factor raster
+
+These outputs are used to evaluate erosion potential across the watershed.
+
