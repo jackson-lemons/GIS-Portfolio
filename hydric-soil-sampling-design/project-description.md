@@ -24,19 +24,19 @@ Hydric soil sampling locations were then distributed along these transects to gu
 
 Field observations are being recorded using ArcGIS Field Maps and include:
 
-Soil color (Munsell chart)
+* Soil color (Munsell chart)
 
-Soil texture by feel
+* Soil texture by feel
 
-Evidence of hydric soil indicators
+* Evidence of hydric soil indicators
 
-Observations of erosion or deposition features
+* Observations of erosion or deposition features
 
 ## Tools
 
-ArcGIS Pro
+* ArcGIS Pro
 
-ArcGIS Field Maps
+* ArcGIS Field Maps
 
 ## Status
 
